@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>KoolMind</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./images/logo.png" alt="" srcset="" />
+      </div>
+      <div class="header__button--profile">
+        <div class="order__button">
+          <button class="current__order">Current Orders</button>
+          <button class="upcoming__order">Upcoming Orders</button>
+        </div>
+        <div class="profile">
+          <div>
+            <i class="fad fa-user-tie fa-2x"></i>
+          </div>
+          <p>MICHELE MORRONE</p>
+        </div>
+        <div class="burger">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
+          <div class="line-3"></div>
+        </div>
+      </div>
+    </header>
+    <div id="open-close" class="responsive_nav hidden">
+      <div class="sidebar">
+        <div class="sidebarWrapper">
+          <div class="sidebarMenu">
+            <ul class="sidebarList">
+              <li class="sidebarListItem active">
+                <i class="fal fa-history"></i>
+                Orders
+              </li>
+              <li class="sidebarListItem">
+                <i class="fal fa-file-edit"></i>
+                Services
+              </li>
+              <li class="sidebarListItem">
+                <i class="fal fa-coins"></i>
+                Wallet
+              </li>
+              <li class="sidebarListItem">
+                <i class="far fa-user"></i>
+                Edit Info
+              </li>
+              <li class="sidebarListItem">
+                <i class="fas fa-file-edit"></i>
+                History
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-maincontent">
+      <div class="sidebar sidebar-desktop">
+        <div class="sidebarWrapper">
+          <div class="sidebarMenu">
+            <ul class="sidebarList">
+              <li class="sidebarListItem active">
+                <i class="fal fa-history"></i>
+                Orders
+              </li>
+              <li class="sidebarListItem">
+                <i class="fal fa-file-edit"></i>
+                Services
+              </li>
+              <li class="sidebarListItem">
+                <i class="fal fa-coins"></i>
+                Wallet
+              </li>
+              <li class="sidebarListItem">
+                <i class="far fa-user"></i>
+                Edit Info
+              </li>
+              <li class="sidebarListItem">
+                <i class="fas fa-file-edit"></i>
+                History
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <main>
+        <div class="nav">
+          <div>
+            <div>
+              <div style="display: flex" ;>
+                <a id="stay-btn" onclick="renderStayContent(1)" href="#">
+                  <div
+                    class="nav__link default active stay-link"
+                    style="border-left: 1px solid rgb(92, 117, 179)"
+                    ;
+                  >
+                    <i class="fas fa-hotel fa-2x"></i>
+                    STAY
+                  </div>
+                </a>
+                <a id="flight-btn" onclick="renderFlightContent(1)" href="#">
+                  <div class="nav__link flight-link">
+                    <p>✈</p>
+                    FLIGHT
+                  </div>
+                </a>
+                <a id="eat-btn" onclick="renderEatContent(1)" href="#">
+                  <div class="nav__link eat-link">
+                    <i class="fas fa-utensils-alt fa-2x"></i>
+                    EAT
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="main-content" class="main-content">
+          <div class="stay__component">
+            <div class="card__wrapper">
+              <div class="card pending">
+                <div class="box-1 box">
+                  <div>🎉</div>
+                  <p>3 Room</p>
+                </div>
+                <div class="box-2 box">
+                  <div class="id__payment">
+                    <p class="order__id">Orders Id: 145290008</p>
+                    <p class="order__payment">Online Payment</p>
+                  </div>
+                  <p class="quantity">3 Deluxe Room</p>
+                  <p class="date__time">Date & Time : 22 Oct 2021 | 10:30 PM</p>
+                </div>
+                <div class="box-3 box">
+                  <div class="person__detail">
+                    <i class="fas fa-user"></i>
+                    <p>Michael</p>
+                  </div>
+                  <p>(702) 633-1000</p>
+                </div>
+                <div class="box-4 box">
+                  <div class="accept__decline--btn">
+                    <button class="decline-btn">DECLINE</button>
+                    <button class="accept-btn">ACCEPT</button>
+                  </div>
+                </div>
+                <div class="box-5 box">
+                  <div class="plus__minus--btn reject">
+                    <div class="hr-line"></div>
+                    <div class="vr-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__wrapper">
+              <div class="card accept">
+                <div class="box-1 box">
+                  <div>💺</div>
+                  <p>3 Room</p>
+                </div>
+                <div class="box-2 box">
+                  <div class="id__payment">
+                    <p class="order__id">Orders Id: 145290008</p>
+                    <p class="order__payment">Online Payment</p>
+                  </div>
+                  <p class="quantity">3 Deluxe Room</p>
+                  <p class="date__time">Date & Time : 22 Oct 2021 | 10:30 PM</p>
+                </div>
+                <div class="box-3 box">
+                  <div class="person__detail">
+                    <i class="fas fa-user"></i>
+                    <p>Michael</p>
+                  </div>
+                  <p>(702) 633-1000</p>
+                </div>
+                <div class="box-4 box">
+                  <div class="accept__order">
+                    <p>ACCEPTING ORDERS</p>
+                  </div>
+                </div>
+                <div class="box-5 box">
+                  <div class="plus__minus--btn accept">
+                    <div class="hr-line"></div>
+                    <div class="vr-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__wrapper">
+              <div class="paid__card">
+                <div class="column__info">
+                  <p class="info__detail">Details</p>
+                  <p class="info__total--person">Total Persons</p>
+                  <p class="info__room-seat">Room Type</p>
+                  <p class="info__amount">Amount</p>
+                  <p class="info__total--amount">TotalAmount</p>
+                  <p class="info__status">Status</p>
+                </div>
+                <div class="card--detail">
+                  <div class="div-1 div">
+                    <img src="./images/room.png" alt="" srcset="" />
+                  </div>
+                  <div class="div-2 div">
+                    <p class="quantity">Deluxe</p>
+                    <p class="date__time">
+                      Date & Time : 22 Oct 2021 | 10:30 PM
+                    </p>
+                  </div>
+                  <div class="div-3 div">
+                    <p class="total__person">6 Adult 2 Child</p>
+                    <p class="total__room">3 Room</p>
+                    <p class="amount__per-room">100$ / per Room</p>
+                  </div>
+                  <div class="div-4 div">
+                    <p class="total__amount">300$</p>
+                    <p class="status">Paid</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card__wrapper">
+              <div class="card reject">
+                <div class="box-1 box">
+                  <!-- <div>{data.icon}</div> -->
+                  <p>3 Room</p>
+                </div>
+                <div class="box-2 box">
+                  <div class="id__payment">
+                    <p class="order__id">Orders Id: 145290008</p>
+                    <p class="order__payment">Online Payment</p>
+                  </div>
+                  <p class="quantity">3 Deluxe Room</p>
+                  <p class="date__time">Date & Time : 22 Oct 2021 | 10:30 PM</p>
+                </div>
+                <div class="box-3 box">
+                  <div class="person__detail">
+                    <i class="fas fa-user"></i>
+                    <p>Michael</p>
+                  </div>
+                  <p>(702) 633-1000</p>
+                </div>
+                <div class="box-4 box">
+                  <div class="reject__order">
+                    <p>DECLINE ORDERS</p>
+                  </div>
+                </div>
+                <div class="box-5 box">
+                  <div class="plus__minus--btn reject">
+                    <div class="hr-line"></div>
+                    <div class="vr-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
